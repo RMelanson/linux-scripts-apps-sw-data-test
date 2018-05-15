@@ -1,2 +1,2 @@
 . ./env/setEnv.sh
-./buildTestData.sh
+./installTestData.sh
