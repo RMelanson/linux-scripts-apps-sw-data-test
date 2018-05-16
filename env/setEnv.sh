@@ -1,1 +1,1 @@
-export SW_DATA=/opt/SW_DATA
+export SW_TEST_DATA=/home/SW_DATA
