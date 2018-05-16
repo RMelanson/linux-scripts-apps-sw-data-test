@@ -1,7 +1,9 @@
 #!/bin/bash
 currDir=$PWD
-jbossDir=/tmp/scripts/apps/SW/DATA/TEST
-git clone https://github.com/RMelanson/linux-scripts-apps-sw-data-test.git $jbossDir
-cd $jbossDir
+#------------------- INSTALL MASTER BOOTSTRAP APPLICATIONS --------------------
+git clone https://github.com/RMelanson/linux-scripts-bootstraps.git $bootStrapsDir
+echo bootstraps installed in directory $bootStrapDir
+cd $bootStrapsDir
 . ./setup.sh
+
 cd $currDir
