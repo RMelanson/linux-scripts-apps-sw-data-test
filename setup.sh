@@ -1,6 +1,6 @@
 #! /bin/bash
 
 # Setup the required environment
-. ./env/setEnv.sh#
+. ./env/setEnv.sh
 
 ./installTestData.sh
