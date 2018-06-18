@@ -11,12 +11,6 @@ yum update -y
 #INSTALL GIT
 yum install git -y
 
-if [ -z "$1" ]; then
-   branch=master
-else
-  branch=$1
-fi
-
 #Set Cloning Properties
 pkg=swTestData
 gitRepo="linux-scripts-apps-sw-test-data.git"
