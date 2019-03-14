@@ -11,8 +11,9 @@ yum update -y
 #INSTALL GIT
 yum install git -y
 
-#Set Cloning Properties
-pkg=swTestData
+# SETUP ENVIRONMENT AND PARAMETERS
+. ./env/setEnv.sh
+
 gitRepo="linux-scripts-apps-sw-test-data.git"
 installDir="/tmp/scripts/apps/SW/test/data"
 if [ -f ~/.ssh/gitHub.key ]; then
