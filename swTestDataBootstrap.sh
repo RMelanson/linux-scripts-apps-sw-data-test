@@ -1,5 +1,4 @@
 #!/bin/bash
-swTestDataCurrDir=$PWD
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root or under sudo"
   exit -1
@@ -12,7 +11,10 @@ yum update -y
 yum install git -y
 
 # SETUP ENVIRONMENT AND PARAMETERS
-. ./env/setEnv.sh
+swTestDataCurrDir=$PWD
+pkg=SW_TEST_DATA
+gitRepo="linux-scripts-apps-sw-test-data.git"
+installDir="/tmp/scripts/data/$pkg"
 
 if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone git@github.com:RMelanson/"
