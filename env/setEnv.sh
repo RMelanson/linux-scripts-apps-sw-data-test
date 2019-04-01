@@ -2,6 +2,8 @@
 
 # SW TEST DATA CONFIGURATION
 pkg=SW_TEST_DATA
+bootstrap="swTestDataBootstrap.sh"
+
 gitRepo="linux-scripts-apps-sw-test-data.git"
 installDir="/tmp/scripts/data/$pkg"
 export SW_TEST_DATA=$SW_HOME/input/swdata
