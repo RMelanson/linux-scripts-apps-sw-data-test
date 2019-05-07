@@ -1,5 +1,8 @@
 #!/bin/bash
-bootstrap=$webCurrDir/swTestDataBootstrap.sh
+bootstrapDir=$PWD
+bootstrap=$bootstrapDir/swTestDataBootstrap.sh
+
+# Ensure script is running under root
 if [ "$EUID" -ne 0 ]
 then
    sudo -n true 2/dev/null 2>&1
