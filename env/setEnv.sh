@@ -13,3 +13,12 @@ installDir="$parentDir/$pkg"
 
 export SW_TEST_DATA=$SW_HOME/input/swdata
 export SW_PROD_DATA=$SW_HOME/input/swdata
+
+pkgOwner=ec2-user
+
+echo Setting External Args
+echo These Arguments Overwrite Default Argument Settings
+for arg in "$@"; do
+  echo setArgs EXECUTING: export $arg
+  export $arg
+done
